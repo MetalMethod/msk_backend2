@@ -22,7 +22,7 @@ exports.connect = function () {
     db.on('error', console.error.bind(console, 'connection error:'));
     db.once('open', function () {
         // we're connected!
-        console.log('\n\r Successfully connected to', DB_CONNECTION_URI);
+        console.log('\n\r Successfully connected to database.');
     });
 };
 
