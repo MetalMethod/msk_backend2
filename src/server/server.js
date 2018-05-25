@@ -8,10 +8,6 @@ var artistsController = require('./../controllers/artistsController');
 var bodyParser = require('body-parser');
 var routes = require('./../routes/routes');
 
-//api server port
-const API_DOMAIN = config.API_DOMAIN;
-const API_PORT = config.API_PORT;
-
 //database connection
 db.connect()
 
@@ -43,10 +39,10 @@ routes(app);
 // ///////##########################
 
 // Launch our API Server and have it listen on port defined in constant.
-app.listen(API_PORT);
+app.listen(config.API_PORT);
 
 ////provide console output:
 var separator = '\n\n\r########################################\n\n\r';
-console.log(separator, 'ms.k API running at: ', API_DOMAIN, API_PORT, separator, 'Press Ctrl+C no stop the server.')
+console.log(separator, 'ms.k API running at: ', config.API_DOMAIN, config.API_PORT, separator, 'Press Ctrl+C no stop the server.')
 
 
