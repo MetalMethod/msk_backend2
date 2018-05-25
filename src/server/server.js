@@ -7,6 +7,7 @@ var db = require('./../models/connection.js');
 var artistsController = require('./../controllers/artistsController');
 var bodyParser = require('body-parser');
 var routes = require('./../routes/routes');
+var middleware = require('./middleware');
 
 //database connection
 db.connect()
@@ -18,25 +19,8 @@ app.use(bodyParser.json())
 // add all routes
 routes(app);
 
-///////##########################
-// Enable the use of the jwtCheck middleware in all of our routes
-
-//app.use(middleware.guard)
-
-// app.use(middleware.jwtCheck)
-
-// app.get('/authorized', function (req, res) {
-//     res.send('Secured Resource');
-// });
-
-// // If we do not get the correct credentials, we’ll return an appropriate message
-// app.use(function (err, req, res, next) {
-//     if (err.name === 'UnauthorizedError') {
-//         res.status(401).json({ message: 'Missing or invalid token' });
-//     }
-// });
-
-// ///////##########################
+// pass app object to middleware
+middleware(app);
 
 // Launch our API Server and have it listen on port defined in constant.
 app.listen(config.API_PORT);
