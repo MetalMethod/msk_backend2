@@ -22,6 +22,26 @@ module.exports = function (appFromServer) {
         }
     );
 
+    app.post(
+        '/artists',
+        function (req, res) {
+            artistsController.add(req, res);
+        }
+    );
+
+    app.put(
+        '/artists/:id',
+        function (req, res) {
+            artistsController.update(req, res);
+        }
+    );
+
+    app.delete(
+        '/artists/:id',
+        function (req, res) {
+            artistsController.delete(req, res);
+        }
+    );
 
 }
 

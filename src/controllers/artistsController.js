@@ -1,9 +1,9 @@
 var mongoose = require('mongoose'),
-Artist = mongoose.model('Artists')
+Artists = mongoose.model('Artists')
 
 //CRUD methods
 exports.artists = function(req, res) {
-    Artist.find({}, function(err, artists) {
+    Artists.find({}, function(err, artists) {
         if (err) {
             res.send(err);
         } else {
@@ -15,7 +15,7 @@ exports.artists = function(req, res) {
 exports.getSingleArtist = function(req, res) {
     var artistId = String(req.params.id);
     if (artistId.length === 24) {
-        Artist.findById(mongoose.Types.ObjectId(artistId), function(err, artist) {
+        Artists.findById(mongoose.Types.ObjectId(artistId), function(err, artist) {
             if (err) {
                 res.send("Artist not found");
             } else {
@@ -29,7 +29,9 @@ exports.getSingleArtist = function(req, res) {
 };
 
 exports.add = function(req, res) {
-    var newArtist = new Artist(req.body);
+
+    
+    var newArtist = new Artists(req.body);
     newArtist.save(function(err, artist) {
         if (err) {
             res.send(err);
@@ -41,7 +43,7 @@ exports.add = function(req, res) {
 
 exports.update = function(req, res) {
     var id = mongoose.Types.ObjectId(req.query.artistId);
-    artist.findOneAndUpdate({ _id: id }, req.body, { new: true }, function(err, artist) {
+    Artists.findOneAndUpdate({ _id: id }, req.body, { new: true }, function(err, artist) {
         if (err) {
             res.send(err);
             res.json(artist);
@@ -50,13 +52,18 @@ exports.update = function(req, res) {
 };
 
 exports.delete = function(req, res) {
-    var id = mongoose.Types.ObjectId(req.query.artistId);
-    Artisst.remove({
+    
+    var artistId = String(req.params.id);
+
+    var id = mongoose.Types.ObjectId(artistId);
+
+    Artists.remove({
         _id: id
     }, function(err, artist) {
         if (err) {
             res.send(err);
-            res.json({ message: 'artist successfully deleted' });
+        }else{
+            res.json({ message: 'artist successfully deleted' , _id: id});
         }
     });
 };

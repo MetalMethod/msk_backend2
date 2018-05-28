@@ -76,8 +76,9 @@ module.exports = function (app) {
    
     // Enable the use of the jwtCheck middleware in all of our routes
     
-    // app.use(middleware.guard)
-    // app.use(middleware.jwtCheck)
+    // app.use(guard)
+    // app.use(jwtCheck)
+    
     // app.get('/authorized', function (req, res) {
     //     res.send('Secured Resource');
     // });

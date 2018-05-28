@@ -7,11 +7,10 @@ var artistSchema = new Schema({
   genre:    { type: String, Required:  'Genre cannot be left blank.'},
   description: { type: String },
   country: { type: String },
-  link: { type: String },
   album: { type: String },
   user: { type: String },
-  songs: { type: Object }
-
+  bestSong: { type: String },
+  secondBestSong: { type: String }
 });
 
 module.exports = mongoose.model('Artists', artistSchema);
