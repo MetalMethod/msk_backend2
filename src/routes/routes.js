@@ -10,8 +10,6 @@ module.exports = function (appFromServer) {
     app.get(
         '/artists',
         function (req, res) {
-            // get list of artists
-            // Send the res as a JSON array
             artistsController.artists(req, res);
         }
     );
