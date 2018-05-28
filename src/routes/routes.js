@@ -1,50 +1,56 @@
 var artistsController = require('./../controllers/artistsController');
 var countriesController = require('./../controllers/countriesController');
 
-var app;
+var app, checkJwt;
 
-module.exports = function (appFromServer) {
+module.exports = function (appFromServer, jwt) {
     app = appFromServer;
+    checkJwt = jwt
 
-    //ARTISTS API endpoints
+    //ARTISTS API endpoints with auth0 jwt
     app.get(
-        '/artists',
+        '/api/artists',
+        checkJwt,
         function (req, res) {
             artistsController.artists(req, res);
         }
     );
 
     app.get(
-        '/artists/:id',
+        '/api/artists/:id',
+        checkJwt,
         function (req, res) {
             artistsController.getSingleArtist(req, res);
         }
     );
 
     app.post(
-        '/artists',
+        'api/artists',
+        checkJwt,
         function (req, res) {
             artistsController.add(req, res);
         }
     );
 
     app.put(
-        '/artists/:id',
+        '/api/artists/:id',
+        checkJwt,
         function (req, res) {
             artistsController.update(req, res);
         }
     );
 
     app.delete(
-        '/artists/:id',
+        '/api/artists/:id',
+        checkJwt,
         function (req, res) {
             artistsController.delete(req, res);
         }
     );
 
-    //GET COUNTRY LIST
+    //GET COUNTRY LIST - no auth required
     app.get(
-        '/countries',
+        '/api/countries',
         function (req, res) {
             countriesController.getCountries(req, res);
         }

@@ -12,14 +12,14 @@ var routes = require('./../routes/routes');
 db.connect()
 
 // add json parser to all requests and responses
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 
-// add all routes
-routes(app);
-
 // pass app object to middleware
-middleware(app);
+var checkJwt =  middleware(app);
+
+// add all routes
+routes(app, checkJwt);
 
 // Launch our API Server and have it listen on port defined in constant.
 app.listen(config.API_PORT);
