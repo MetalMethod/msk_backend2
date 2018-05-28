@@ -25,12 +25,9 @@ exports.getSingleArtist = function(req, res) {
     } else {
         res.send("Id is invalid");
     }
-
 };
 
 exports.add = function(req, res) {
-
-    
     var newArtist = new Artists(req.body);
     newArtist.save(function(err, artist) {
         if (err) {
@@ -52,11 +49,8 @@ exports.update = function(req, res) {
 };
 
 exports.delete = function(req, res) {
-    
     var artistId = String(req.params.id);
-
     var id = mongoose.Types.ObjectId(artistId);
-
     Artists.remove({
         _id: id
     }, function(err, artist) {
