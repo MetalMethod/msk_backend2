@@ -39,10 +39,12 @@ exports.add = function(req, res) {
 };
 
 exports.update = function(req, res) {
-    var id = mongoose.Types.ObjectId(req.query.artistId);
+    var artistId = String(req.params.id);    
+    var id = mongoose.Types.ObjectId(artistId);
     Artists.findOneAndUpdate({ _id: id }, req.body, { new: true }, function(err, artist) {
         if (err) {
             res.send(err);
+        }else{
             res.json(artist);
         }
     });
