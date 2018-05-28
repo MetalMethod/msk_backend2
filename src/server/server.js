@@ -2,12 +2,11 @@
 var express = require('express');
 var app = express();
 var config = require('./../config');
-var middleware = require('./middleware.js');
+var middleware = require('./../middleware/middleware.js');
 var db = require('./../models/connection.js');
 var artistsController = require('./../controllers/artistsController');
 var bodyParser = require('body-parser');
 var routes = require('./../routes/routes');
-var middleware = require('./middleware');
 
 //database connection
 db.connect()

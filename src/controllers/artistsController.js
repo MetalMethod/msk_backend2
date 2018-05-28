@@ -2,6 +2,8 @@ var mongoose = require('mongoose'),
 Artists = mongoose.model('Artists')
 
 //CRUD methods
+
+//GET ALL
 exports.artists = function(req, res) {
     Artists.find({}, function(err, artists) {
         if (err) {
@@ -12,6 +14,7 @@ exports.artists = function(req, res) {
     });
 };
 
+//GET SINGLE BY ID
 exports.getSingleArtist = function(req, res) {
     var artistId = String(req.params.id);
     if (artistId.length === 24) {
@@ -23,10 +26,11 @@ exports.getSingleArtist = function(req, res) {
             }
         });
     } else {
-        res.send("Id is invalid");
+        res.send("request Id is invalid. \nid received: " + artistId);
     }
 };
 
+//CREATE
 exports.add = function(req, res) {
     var newArtist = new Artists(req.body);
     newArtist.save(function(err, artist) {
@@ -38,6 +42,7 @@ exports.add = function(req, res) {
     });
 };
 
+//UPDATE
 exports.update = function(req, res) {
     var artistId = String(req.params.id);    
     var id = mongoose.Types.ObjectId(artistId);
@@ -50,6 +55,7 @@ exports.update = function(req, res) {
     });
 };
 
+//DELETE
 exports.delete = function(req, res) {
     var artistId = String(req.params.id);
     var id = mongoose.Types.ObjectId(artistId);
