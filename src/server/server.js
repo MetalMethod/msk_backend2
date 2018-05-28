@@ -7,15 +7,21 @@ var db = require('./../dbConnection/connection.js');
 var artistsController = require('./../controllers/artistsController');
 var bodyParser = require('body-parser');
 var routes = require('./../routes/routes');
+var helmet = require('helmet');
 
 //database connection
 db.connect()
+
+//Helmet - multi security tooling
+// reference for helmet:
+// https://expressjs.com/en/advanced/best-practice-security.html
+app.use(helmet())
 
 // add json parser to all requests and responses
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 
-// pass app object to middleware
+// pass app object to middleware and receive JWT check object to use in restricted routes.
 var checkJwt =  middleware(app);
 
 // add all routes
