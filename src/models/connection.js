@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var schema = require('./artist.js');
+var countrySchema = require('./countries.js');
 var config = require('./../config');
 
 // import logger from '../logger';

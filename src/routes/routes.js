@@ -1,11 +1,12 @@
 var artistsController = require('./../controllers/artistsController');
+var countriesController = require('./../controllers/countriesController');
 
 var app;
 
 module.exports = function (appFromServer) {
     app = appFromServer;
 
-    // implementation of artists API endpoints
+    //ARTISTS API endpoints
     app.get(
         '/artists',
         function (req, res) {
@@ -43,5 +44,12 @@ module.exports = function (appFromServer) {
         }
     );
 
+    //GET COUNTRY LIST
+    app.get(
+        '/countries',
+        function (req, res) {
+            countriesController.getCountries(req, res);
+        }
+    );
 }
 

@@ -1,3 +1,5 @@
+//MUST REQUIRE THIS FILE IN connection.js
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 

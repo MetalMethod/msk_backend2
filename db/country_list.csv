@@ -1,0 +1,244 @@
+_id,name,code
+ObjectId("5aaba4693dcae11a6463072e"),Afghanistan,AF
+ObjectId("5aaba4693dcae11a6463072f"),Aland Islands,AX
+ObjectId("5aaba4693dcae11a64630730"),Albania,AL
+ObjectId("5aaba4693dcae11a64630731"),Algeria,DZ
+ObjectId("5aaba4693dcae11a64630732"),American Samoa,AS
+ObjectId("5aaba4693dcae11a64630733"),Andorra,AD
+ObjectId("5aaba4693dcae11a64630734"),Angola,AO
+ObjectId("5aaba4693dcae11a64630736"),Antarctica,AQ
+ObjectId("5aaba4693dcae11a64630735"),Anguilla,AI
+ObjectId("5aaba4693dcae11a64630739"),Armenia,AM
+ObjectId("5aaba4693dcae11a64630737"),Antigua and Barbuda,AG
+ObjectId("5aaba4693dcae11a6463073c"),Austria,AT
+ObjectId("5aaba4693dcae11a6463073d"),Azerbaijan,AZ
+ObjectId("5aaba4693dcae11a6463073a"),Aruba,AW
+ObjectId("5aaba4693dcae11a64630741"),Barbados,BB
+ObjectId("5aaba4693dcae11a64630742"),Belarus,BY
+ObjectId("5aaba4693dcae11a64630746"),Bermuda,BM
+ObjectId("5aaba4693dcae11a6463073f"),Bahrain,BH
+ObjectId("5aaba4693dcae11a6463073b"),Australia,AU
+ObjectId("5aaba4693dcae11a64630744"),Belize,BZ
+ObjectId("5aaba4693dcae11a64630747"),Bhutan,BT
+ObjectId("5aaba4693dcae11a6463073e"),Bahamas,BS
+ObjectId("5aaba4693dcae11a64630749"),Bosnia and Herzegovina,BA
+ObjectId("5aaba4693dcae11a6463074c"),Brazil,BR
+ObjectId("5aaba4693dcae11a64630743"),Belgium,BE
+ObjectId("5aaba4693dcae11a6463074e"),Brunei Darussalam,BN
+ObjectId("5aaba4693dcae11a64630748"),Bolivia,BO
+ObjectId("5aaba4693dcae11a64630751"),Burundi,BI
+ObjectId("5aaba4693dcae11a64630753"),Cameroon,CM
+ObjectId("5aaba4693dcae11a6463074b"),Bouvet Island,BV
+ObjectId("5aaba4693dcae11a64630756"),Cayman Islands,KY
+ObjectId("5aaba4693dcae11a64630750"),Burkina Faso,BF
+ObjectId("5aaba4693dcae11a6463074d"),British Indian Ocean Territory,IO
+ObjectId("5aaba4693dcae11a64630758"),Chad,TD
+ObjectId("5aaba4693dcae11a64630755"),Cape Verde,CV
+ObjectId("5aaba4693dcae11a64630752"),Cambodia,KH
+ObjectId("5aaba4693dcae11a6463075b"),Christmas Island,CX
+ObjectId("5aaba4693dcae11a6463075a"),China,CN
+ObjectId("5aaba4693dcae11a6463075d"),Colombia,CO
+ObjectId("5aaba4693dcae11a6463075f"),Congo,CG
+ObjectId("5aaba4693dcae11a64630757"),Central African Republic,CF
+ObjectId("5aaba4693dcae11a64630760"),Congo, The Democratic Republic of the,CD
+ObjectId("5aaba4693dcae11a64630762"),Costa Rica,CR
+ObjectId("5aaba4693dcae11a64630765"),Cuba,CU
+ObjectId("5aaba4693dcae11a64630767"),Czech Republic,CZ
+ObjectId("5aaba4693dcae11a64630764"),Croatia,HR
+ObjectId("5aaba4693dcae11a6463076a"),Dominica,DM
+ObjectId("5aaba4693dcae11a64630769"),Djibouti,DJ
+ObjectId("5aaba4693dcae11a6463076c"),Ecuador,EC
+ObjectId("5aaba4693dcae11a6463076e"),El Salvador,SV
+ObjectId("5aaba4693dcae11a64630771"),Estonia,EE
+ObjectId("5aaba4693dcae11a6463076f"),Equatorial Guinea,GQ
+ObjectId("5aaba4693dcae11a64630776"),Finland,FI
+ObjectId("5aaba4693dcae11a64630774"),Faroe Islands,FO
+ObjectId("5aaba4693dcae11a64630773"),Falkland Islands (Malvinas),FK
+ObjectId("5aaba4693dcae11a64630778"),French Guiana,GF
+ObjectId("5aaba4693dcae11a6463077b"),Gabon,GA
+ObjectId("5aaba4693dcae11a64630779"),French Polynesia,PF
+ObjectId("5aaba4693dcae11a6463077d"),Georgia,GE
+ObjectId("5aaba4693dcae11a6463077e"),Germany,DE
+ObjectId("5aaba4693dcae11a64630780"),Gibraltar,GI
+ObjectId("5aaba4693dcae11a64630782"),Greenland,GL
+ObjectId("5aaba4693dcae11a64630785"),Guam,GU
+ObjectId("5aaba4693dcae11a64630783"),Grenada,GD
+ObjectId("5aaba4693dcae11a64630787"),Guernsey,GG
+ObjectId("5aaba4693dcae11a64630788"),Guinea,GN
+ObjectId("5aaba4693dcae11a6463078a"),Guyana,GY
+ObjectId("5aaba4693dcae11a6463078c"),Heard Island and Mcdonald Islands,HM
+ObjectId("5aaba4693dcae11a6463078d"),Holy See (Vatican City State),VA
+ObjectId("5aaba4693dcae11a6463075c"),Cocos (Keeling) Islands,CC
+ObjectId("5aaba4693dcae11a6463078f"),Hong Kong,HK
+ObjectId("5aaba4693dcae11a64630791"),Iceland,IS
+ObjectId("5aaba4693dcae11a64630792"),India,IN
+ObjectId("5aaba4693dcae11a64630761"),Cook Islands,CK
+ObjectId("5aaba4693dcae11a64630794"),Iran, Islamic Republic Of,IR
+ObjectId("5aaba4693dcae11a64630766"),Cyprus,CY
+ObjectId("5aaba4693dcae11a64630796"),Ireland,IE
+ObjectId("5aaba4693dcae11a64630797"),Isle of Man,IM
+ObjectId("5aaba4693dcae11a6463076b"),Dominican Republic,DO
+ObjectId("5aaba4693dcae11a64630799"),Italy,IT
+ObjectId("5aaba4693dcae11a6463079b"),Japan,JP
+ObjectId("5aaba4693dcae11a64630770"),Eritrea,ER
+ObjectId("5aaba4693dcae11a6463079c"),Jersey,JE
+ObjectId("5aaba4693dcae11a6463079e"),Kazakhstan,KZ
+ObjectId("5aaba4693dcae11a64630775"),Fiji,FJ
+ObjectId("5aaba4693dcae11a646307a0"),Kiribati,KI
+ObjectId("5aaba4693dcae11a646307a1"),Korea, Democratic People Republic of,KP
+ObjectId("5aaba4693dcae11a64630738"),Argentina,AR
+ObjectId("5aaba4693dcae11a646307a3"),Kuwait,KW
+ObjectId("5aaba4693dcae11a6463077a"),French Southern Territories,TF
+ObjectId("5aaba4693dcae11a646307a5"),Lao People Democratic Republic,LA
+ObjectId("5aaba4693dcae11a646307a6"),Latvia,LV
+ObjectId("5aaba4693dcae11a6463077f"),Ghana,GH
+ObjectId("5aaba4693dcae11a646307a8"),Lesotho,LS
+ObjectId("5aaba4693dcae11a64630740"),Bangladesh,BD
+ObjectId("5aaba4693dcae11a646307aa"),Libyan Arab Jamahiriya,LY
+ObjectId("5aaba4693dcae11a64630784"),Guadeloupe,GP
+ObjectId("5aaba4693dcae11a646307ab"),Liechtenstein,LI
+ObjectId("5aaba4693dcae11a646307ad"),Luxembourg,LU
+ObjectId("5aaba4693dcae11a64630745"),Benin,BJ
+ObjectId("5aaba4693dcae11a64630789"),Guinea-Bissau,GW
+ObjectId("5aaba4693dcae11a646307af"),Macedonia, The Former Yugoslav Republic of,MK
+ObjectId("5aaba4693dcae11a6463074a"),Botswana,BW
+ObjectId("5aaba4693dcae11a646307b0"),Madagascar,MG
+ObjectId("5aaba4693dcae11a646307b2"),Malaysia,MY
+ObjectId("5aaba4693dcae11a6463074f"),Bulgaria,BG
+ObjectId("5aaba4693dcae11a646307b4"),Mali,ML
+ObjectId("5aaba4693dcae11a646307b5"),Malta,MT
+ObjectId("5aaba4693dcae11a646307b7"),Martinique,MQ
+ObjectId("5aaba4693dcae11a6463078e"),Honduras,HN
+ObjectId("5aaba4693dcae11a646307b9"),Mauritius,MU
+ObjectId("5aaba4693dcae11a64630754"),Canada,CA
+ObjectId("5aaba4693dcae11a646307ba"),Mayotte,YT
+ObjectId("5aaba4693dcae11a646307bc"),Micronesia, Federated States of,FM
+ObjectId("5aaba4693dcae11a64630793"),Indonesia,ID
+ObjectId("5aaba4693dcae11a64630759"),Chile,CL
+ObjectId("5aaba4693dcae11a646307be"),Monaco,MC
+ObjectId("5aaba4693dcae11a646307bf"),Mongolia,MN
+ObjectId("5aaba4693dcae11a6463075e"),Comoros,KM
+ObjectId("5aaba4693dcae11a646307c1"),Morocco,MA
+ObjectId("5aaba4693dcae11a64630798"),Israel,IL
+ObjectId("5aaba4693dcae11a646307c3"),Myanmar,MM
+ObjectId("5aaba4693dcae11a646307c4"),Namibia,NA
+ObjectId("5aaba4693dcae11a646307c6"),Nepal,NP
+ObjectId("5aaba4693dcae11a646307c8"),Netherlands Antilles,AN
+ObjectId("5aaba4693dcae11a64630763"),Cote D' Ivoire,CI
+ObjectId("5aaba4693dcae11a646307c9"),New Caledonia,NC
+ObjectId("5aaba4693dcae11a646307cb"),Nicaragua,NI
+ObjectId("5aaba4693dcae11a64630768"),Denmark,DK
+ObjectId("5aaba4693dcae11a646307cd"),Nigeria,NG
+ObjectId("5aaba4693dcae11a646307ce"),Niue,NU
+ObjectId("5aaba4693dcae11a6463079d"),Jordan,JO
+ObjectId("5aaba4693dcae11a646307d0"),Northern Mariana Islands,MP
+ObjectId("5aaba4693dcae11a6463076d"),Egypt,EG
+ObjectId("5aaba4693dcae11a646307d2"),Oman,OM
+ObjectId("5aaba4693dcae11a646307d3"),Pakistan,PK
+ObjectId("5aaba4693dcae11a646307a2"),Korea, Republic of,KR
+ObjectId("5aaba4693dcae11a646307d5"),Palestinian Territory, Occupied,PS
+ObjectId("5aaba4693dcae11a64630772"),Ethiopia,ET
+ObjectId("5aaba4693dcae11a646307d7"),Papua New Guinea,PG
+ObjectId("5aaba4693dcae11a646307d8"),Paraguay,PY
+ObjectId("5aaba4693dcae11a646307da"),Philippines,PH
+ObjectId("5aaba4693dcae11a646307a7"),Lebanon,LB
+ObjectId("5aaba4693dcae11a64630777"),France,FR
+ObjectId("5aaba4693dcae11a646307dc"),Poland,PL
+ObjectId("5aaba4693dcae11a646307dd"),Portugal,PT
+ObjectId("5aaba4693dcae11a646307df"),Qatar,QA
+ObjectId("5aaba4693dcae11a6463077c"),Gambia,GM
+ObjectId("5aaba4693dcae11a646307ac"),Lithuania,LT
+ObjectId("5aaba4693dcae11a646307e1"),Romania,RO
+ObjectId("5aaba4693dcae11a646307e2"),Russian Federation,RU
+ObjectId("5aaba4693dcae11a646307e4"),Saint Helena,SH
+ObjectId("5aaba4693dcae11a646307b1"),Malawi,MW
+ObjectId("5aaba4693dcae11a646307e6"),Saint Lucia,LC
+ObjectId("5aaba4693dcae11a64630781"),Greece,GR
+ObjectId("5aaba4693dcae11a646307e7"),Saint Pierre and Miquelon,PM
+ObjectId("5aaba4693dcae11a646307e9"),Samoa,WS
+ObjectId("5aaba4693dcae11a646307b6"),Marshall Islands,MH
+ObjectId("5aaba4693dcae11a646307eb"),Sao Tome and Principe,ST
+ObjectId("5aaba4693dcae11a64630786"),Guatemala,GT
+ObjectId("5aaba4693dcae11a646307ec"),Saudi Arabia,SA
+ObjectId("5aaba4693dcae11a646307ee"),Serbia and Montenegro,CS
+ObjectId("5aaba4693dcae11a646307f0"),Sierra Leone,SL
+ObjectId("5aaba4693dcae11a646307bb"),Mexico,MX
+ObjectId("5aaba4693dcae11a6463078b"),Haiti,HT
+ObjectId("5aaba4693dcae11a646307f1"),Singapore,SG
+ObjectId("5aaba4693dcae11a646307f3"),Slovenia,SI
+ObjectId("5aaba4693dcae11a646307c0"),Montserrat,MS
+ObjectId("5aaba4693dcae11a646307f5"),Somalia,SO
+ObjectId("5aaba4693dcae11a646307f6"),South Africa,ZA
+ObjectId("5aaba4693dcae11a64630790"),Hungary,HU
+ObjectId("5aaba4693dcae11a646307f8"),Spain,ES
+ObjectId("5aaba4693dcae11a646307fa"),Sudan,SD
+ObjectId("5aaba4693dcae11a64630795"),Iraq,IQ
+ObjectId("5aaba4693dcae11a646307fb"),Suriname,SR
+ObjectId("5aaba4693dcae11a646307c5"),Nauru,NR
+ObjectId("5aaba4693dcae11a646307fd"),Swaziland,SZ
+ObjectId("5aaba4693dcae11a6463079a"),Jamaica,JM
+ObjectId("5aaba4693dcae11a646307ff"),Switzerland,CH
+ObjectId("5aaba4693dcae11a64630800"),Syrian Arab Republic,SY
+ObjectId("5aaba4693dcae11a64630802"),Tajikistan,TJ
+ObjectId("5aaba4693dcae11a6463079f"),Kenya,KE
+ObjectId("5aaba4693dcae11a64630804"),Thailand,TH
+ObjectId("5aaba4693dcae11a64630805"),Timor-Leste,TL
+ObjectId("5aaba4693dcae11a646307ca"),New Zealand,NZ
+ObjectId("5aaba4693dcae11a64630807"),Tokelau,TK
+ObjectId("5aaba4693dcae11a646307a4"),Kyrgyzstan,KG
+ObjectId("5aaba4693dcae11a64630809"),Trinidad and Tobago,TT
+ObjectId("5aaba4693dcae11a6463080a"),Tunisia,TN
+ObjectId("5aaba4693dcae11a646307cf"),Norfolk Island,NF
+ObjectId("5aaba4693dcae11a6463080c"),Turkmenistan,TM
+ObjectId("5aaba4693dcae11a646307a9"),Liberia,LR
+ObjectId("5aaba4693dcae11a6463080e"),Tuvalu,TV
+ObjectId("5aaba4693dcae11a646307d4"),Palau,PW
+ObjectId("5aaba4693dcae11a6463080f"),Uganda,UG
+ObjectId("5aaba4693dcae11a646307ae"),Macao,MO
+ObjectId("5aaba4693dcae11a64630811"),United Arab Emirates,AE
+ObjectId("5aaba4693dcae11a646307d9"),Peru,PE
+ObjectId("5aaba4693dcae11a646307b3"),Maldives,MV
+ObjectId("5aaba4693dcae11a64630813"),United States,US
+ObjectId("5aaba4693dcae11a64630814"),United States Minor Outlying Islands,UM
+ObjectId("5aaba4693dcae11a646307de"),Puerto Rico,PR
+ObjectId("5aaba4693dcae11a64630816"),Uzbekistan,UZ
+ObjectId("5aaba4693dcae11a646307b8"),Mauritania,MR
+ObjectId("5aaba4693dcae11a64630818"),Venezuela,VE
+ObjectId("5aaba4693dcae11a646307e3"),RWANDA,RW
+ObjectId("5aaba4693dcae11a64630819"),Viet Nam,VN
+ObjectId("5aaba4693dcae11a6463081b"),Virgin Islands, U.S.,VI
+ObjectId("5aaba4693dcae11a646307bd"),Moldova, Republic of,MD
+ObjectId("5aaba4693dcae11a6463081d"),Western Sahara,EH
+ObjectId("5aaba4693dcae11a646307e8"),Saint Vincent and the Grenadines,VC
+ObjectId("5aaba4693dcae11a6463081e"),Yemen,YE
+ObjectId("5aaba4693dcae11a646307c2"),Mozambique,MZ
+ObjectId("5aaba4693dcae11a64630820"),Zimbabwe,ZW
+ObjectId("5aaba4693dcae11a646307ed"),Senegal,SN
+ObjectId("5aaba4693dcae11a646307f2"),Slovakia,SK
+ObjectId("5aaba4693dcae11a646307c7"),Netherlands,NL
+ObjectId("5aaba4693dcae11a646307f7"),South Georgia and the South Sandwich Islands,GS
+ObjectId("5aaba4693dcae11a646307cc"),Niger,NE
+ObjectId("5aaba4693dcae11a646307fc"),Svalbard and Jan Mayen,SJ
+ObjectId("5aaba4693dcae11a646307d1"),Norway,NO
+ObjectId("5aaba4693dcae11a64630801"),Taiwan, Province of China,TW
+ObjectId("5aaba4693dcae11a646307d6"),Panama,PA
+ObjectId("5aaba4693dcae11a64630806"),Togo,TG
+ObjectId("5aaba4693dcae11a646307db"),Pitcairn,PN
+ObjectId("5aaba4693dcae11a6463080b"),Turkey,TR
+ObjectId("5aaba4693dcae11a646307e0"),Reunion,RE
+ObjectId("5aaba4693dcae11a64630810"),Ukraine,UA
+ObjectId("5aaba4693dcae11a646307e5"),Saint Kitts and Nevis,KN
+ObjectId("5aaba4693dcae11a64630815"),Uruguay,UY
+ObjectId("5aaba4693dcae11a646307ea"),San Marino,SM
+ObjectId("5aaba4693dcae11a646307ef"),Seychelles,SC
+ObjectId("5aaba4693dcae11a6463081a"),Virgin Islands, British,VG
+ObjectId("5aaba4693dcae11a646307f4"),Solomon Islands,SB
+ObjectId("5aaba4693dcae11a6463081f"),Zambia,ZM
+ObjectId("5aaba4693dcae11a646307f9"),Sri Lanka,LK
+ObjectId("5aaba4693dcae11a646307fe"),Sweden,SE
+ObjectId("5aaba4693dcae11a64630803"),Tanzania, United Republic of,TZ
+ObjectId("5aaba4693dcae11a64630808"),Tonga,TO
+ObjectId("5aaba4693dcae11a6463080d"),Turks and Caicos Islands,TC
+ObjectId("5aaba4693dcae11a64630812"),United Kingdom,GB
+ObjectId("5aaba4693dcae11a64630817"),Vanuatu,VU
+ObjectId("5aaba4693dcae11a6463081c"),Wallis and Futuna,WF
