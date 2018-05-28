@@ -25,7 +25,7 @@ module.exports = function (appFromServer, jwt) {
     );
 
     app.post(
-        'api/artists',
+        '/api/artists',
         checkJwt,
         function (req, res) {
             artistsController.add(req, res);
