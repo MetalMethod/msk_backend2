@@ -4,10 +4,10 @@ var mongoose = require('mongoose');
 var config = require('./../config');
 
 //This is the deafult schema
-var schema = require('./artist.js');
+var schema = require('./../models/artist.js');
 
 //It builds all the models that are required here.
-var countrySchema = require('./countries.js');
+var countrySchema = require('./../models/countries.js');
 
 // import logger from '../logger';
 
