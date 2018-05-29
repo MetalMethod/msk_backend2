@@ -10,7 +10,7 @@ module.exports = function (appFromServer, jwt) {
     //ARTISTS API endpoints with auth0 jwt
     app.get(
         '/api/artists',
-        checkJwt,
+        //checkJwt,
         function (req, res) {
             artistsController.artists(req, res);
         }
@@ -18,7 +18,7 @@ module.exports = function (appFromServer, jwt) {
 
     app.get(
         '/api/artists/:id',
-        checkJwt,
+        //checkJwt,
         function (req, res) {
             artistsController.getSingleArtist(req, res);
         }
@@ -26,7 +26,7 @@ module.exports = function (appFromServer, jwt) {
 
     app.post(
         '/api/artists',
-        checkJwt,
+       // checkJwt,
         function (req, res) {
             artistsController.add(req, res);
         }
@@ -34,7 +34,7 @@ module.exports = function (appFromServer, jwt) {
 
     app.put(
         '/api/artists/:id',
-        checkJwt,
+        //checkJwt,
         function (req, res) {
             artistsController.update(req, res);
         }
@@ -42,7 +42,7 @@ module.exports = function (appFromServer, jwt) {
 
     app.delete(
         '/api/artists/:id',
-        checkJwt,
+        //checkJwt,
         function (req, res) {
             artistsController.delete(req, res);
         }

@@ -30,13 +30,13 @@ module.exports = function (app) {
     });
 
     //check for tokens is every request to the api
-    app.use(checkJwt);
+    //app.use(checkJwt);
 
     // If we do not get the correct credentials, we’ll return an appropriate message
     app.use(function (err, req, res, next) {
         if (err) {
             if (err.name === 'UnauthorizedError') {
-                logger.error('Missing or invalid token. Error name: ', err.name,  'Request URL: ', req.originalUrl)
+                logger.error('Missing or invalid token. Error name:', err.name,  'Request URL:', req.originalUrl, 'request method:', req.method)
                 
                 res.status(401).json({ message: 'Missing or invalid token.' });
             
