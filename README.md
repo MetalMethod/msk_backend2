@@ -3,8 +3,16 @@ NodeJS backend RESTful API built with Express framework, Auth0 authentication se
 
 check src/config.js for global settings.
 
-to start the API server:
+to start the API server (will launch in production mode with PM2 process mananger):
 ```npm start```
+
+to check if the app is wunning as a daemon:
+```pm2 list```
+
+requires the instalation of PM2:
+```npm install pm2 -g```
+then 
+```pm2 install pm2-intercom```
 
 References:
 - main tutorial (adding Auth0 steps are outdated):

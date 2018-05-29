@@ -1,6 +1,7 @@
 //tool for generating keys
 var jwt = require('express-jwt');
 var jwks = require('jwks-rsa');
+var logger = require('./logger');
 
 module.exports = function (app) {
 
@@ -35,9 +36,13 @@ module.exports = function (app) {
     app.use(function (err, req, res, next) {
         if (err) {
             if (err.name === 'UnauthorizedError') {
+                logger.error('Missing or invalid token. Error name: ', err.name,  'Request URL: ', req.originalUrl)
+                
                 res.status(401).json({ message: 'Missing or invalid token.' });
+            
             } else {
-                res.status(401).json({ error: err });
+                
+                res.status(401).json({ message: 'Successful request:', requestUrl:  req.originalUrl });
             }
         }
     });

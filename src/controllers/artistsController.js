@@ -1,5 +1,6 @@
 var mongoose = require('mongoose'),
-    Artists = mongoose.model('Artists')
+Artists = mongoose.model('Artists')
+var logger = require('./../middleware/logger');
 
 //CRUD methods
 
@@ -8,6 +9,8 @@ exports.artists = function (req, res) {
     Artists.find({}, function (err, artists) {
         if (err) {
             res.send(err);
+            logger.error('Error in get all artists request', req.body);
+            
         } else {
             res.json(artists);
         }
@@ -21,12 +24,16 @@ exports.getSingleArtist = function (req, res) {
         Artists.findById(mongoose.Types.ObjectId(artistId), function (err, artist) {
             if (err) {
                 res.send("Artist not found");
+                logger.error('Artist by Id not found', req.body);
+                
             } else {
                 res.json(artist);
             }
         });
     } else {
         res.send("request Id is invalid. \nid received: " + artistId);
+        logger.error("request in Get artist by Id. Id is invalid. Id received: " + artistId, req.body);        
+        
     }
 };
 
@@ -36,6 +43,7 @@ exports.add = function (req, res) {
     newArtist.save(function (err, artist) {
         if (err) {
             res.send(err);
+            logger.error('Error creating Artist: ', req.body);            
         } else {
             res.json(artist);
         }
@@ -50,12 +58,15 @@ exports.update = function (req, res) {
         Artists.findOneAndUpdate({ _id: id }, req.body, { new: true }, function (err, artist) {
             if (err) {
                 res.send(err);
+                logger.error('Error updating artist', req.body);                
             } else {
                 res.json(artist);
             }
         });
     } else {
-        res.send("request Id is invalid. \nid received: " + artistId);
+        res.send("request Id is invalid. id received: " + artistId);
+        logger.error("request in Update artist. Id is invalid. id received: " + artistId, req.body);        
+        
     }
 };
 
@@ -69,11 +80,14 @@ exports.delete = function (req, res) {
         }, function (err, artist) {
             if (err) {
                 res.send(err);
+                logger.error("Request error in Delete Artist.", req.body);                
+                
             } else {
                 res.json({ message: 'artist successfully deleted', _id: id });
             }
         });
     } else {
         res.send("request Id is invalid. \nid received: " + artistId);
+        logger.error("request in Delete artist. Id is invalid. id received: " + artistId, req.body);                
     }
 };

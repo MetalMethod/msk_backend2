@@ -8,6 +8,7 @@ var artistsController = require('./../controllers/artistsController');
 var bodyParser = require('body-parser');
 var routes = require('./../routes/routes');
 var helmet = require('helmet');
+var logger = require('./../middleware/logger');
 
 //database connection
 db.connect()
@@ -30,8 +31,8 @@ routes(app, checkJwt);
 // Launch our API Server and have it listen on port defined in constant.
 app.listen(config.API_PORT);
 
-////provide console output:
+////provide console output and loggin to file:
 var separator = '\n\n\r########################################\n\n\r';
-console.log(separator, 'ms.k API running at: ', config.API_DOMAIN, config.API_PORT, separator, 'Press Ctrl+C no stop the server.')
-
+console.log(separator, 'ms.k API running at: ', config.API_DOMAIN, config.API_PORT, separator, 'Press Ctrl+C no stop the development server.')
+logger.info('msk server API started', config.API_DOMAIN, config.API_PORT);
 

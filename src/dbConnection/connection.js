@@ -9,7 +9,8 @@ var schema = require('./../models/artist.js');
 //It builds all the models that are required here.
 var countrySchema = require('./../models/countries.js');
 
-// import logger from '../logger';
+// logger object to save to file outside src
+var logger = require('./../middleware/logger');
 
 mongoose.Promise = global.Promise;
 
@@ -21,11 +22,14 @@ exports.connect = function () {
 
     db = mongoose.connection;
 
-    // checking for connection
-    db.on('error', console.error.bind(console, 'connection error:'));
+    //checking for connection
+    db.on('error', function(){
+        logger.error('Error connecting to database.')
+    });
+
     db.once('open', function () {
         // we're connected!
-        console.log('\n\r Successfully connected to database.');
+        logger.info('Successfully connected to database.');
     });
 };
 
