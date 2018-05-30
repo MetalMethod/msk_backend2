@@ -23,3 +23,9 @@ http://programmerblog.net/nodejs-mongodb-rest-api/
 
 - security checks:
 https://expressjs.com/en/advanced/best-practice-security.html
+
+- integration in angular:
+https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend/
+
+- Auth0 setup:
+https://auth0.com/docs/quickstart/backend/nodejs/01-authorization
