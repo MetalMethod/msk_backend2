@@ -1,5 +1,8 @@
 
 
+#ignoring server logs
+logs/
+
 # Created by https://www.gitignore.io/api/node,code,macos,windows
 
 ### Code ###
