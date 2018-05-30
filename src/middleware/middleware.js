@@ -36,19 +36,28 @@ module.exports = function (app) {
     app.use(function (err, req, res, next) {
         if (err) {
             if (err.name === 'UnauthorizedError') {
-                logger.error('Missing or invalid token. Error name:', err.name,  'Request URL:', req.originalUrl, 'request method:', req.method)
-                
+                logger.error('Missing or invalid token. Error name:', err.name, 'Request URL:', req.originalUrl, 'request method:', req.method)
+
                 res.status(401).json({ message: 'Missing or invalid token.' });
-            
+
             } else {
-                
-                res.status(401).json({ message: 'Successful request:', requestUrl:  req.originalUrl });
+
+                res.status(401).json({ message: 'Successful request:', requestUrl: req.originalUrl });
             }
         }
     });
 
     app.get('/authorized', function (req, res) {
         res.send('Secured Resource');
+    });
+
+    // CORS Header
+    app.use(function (req, res, next) {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+        res.setHeader('Access-Control-Allow-Credentials', true);
+        next();
     });
 
     //return object to pass to the router
